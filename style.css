@@ -1,0 +1,26 @@
+body {
+    background-color: #e9ecf8;
+}
+
+div {
+    display: inline-block;
+}
+
+.divLogo {
+    height: 480px;
+    width: 200px;
+}
+
+.textAreaIn {
+    height: 480px;
+    width: 480px;
+    resize: none;
+    border-radius: 10px;
+}
+
+.divTextOut {
+    height: 480px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: #f3f5fc;
+}
