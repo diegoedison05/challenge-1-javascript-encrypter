@@ -2,25 +2,41 @@ body {
     background-color: #e9ecf8;
 }
 
-div {
-    display: inline-block;
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    width: 100%;
 }
 
 .divLogo {
     height: 480px;
-    width: 200px;
+    width: 15%;
+}
+
+.divTextIn {
+    margin: 0 15px;
+    width: 55%;
 }
 
 .textAreaIn {
     height: 480px;
-    width: 480px;
+    width: 100%;
     resize: none;
     border-radius: 10px;
 }
 
 .divTextOut {
     height: 480px;
-    width: 200px;
+    width: 25%;
     border-radius: 10px;
     background-color: #f3f5fc;
 }
