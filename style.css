@@ -12,7 +12,7 @@ button,
 p {
     font-family: 'IBM Plex Mono', monospace;
     color: #052051;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 main {
@@ -46,6 +46,8 @@ main {
     width: 96%;
     resize: none;
     border-radius: 10px;
+    border: none;
+    background-color: #f3f5fc;
     /* font-family: 'Chakra Petch', sans-serif; */
 }
 
@@ -66,17 +68,28 @@ main {
     width: 80%;
 }
 
-button {
+.btnAll {
     height: 40px;
-    width: 150px;
-    background-color: #aab2d5;
+    width: 220px;
+    background-color: #f3f5fc;
     color: #052051;
     border-radius: 15px;
     border: 1px solid #052051;
     cursor: pointer;
 }
 
-button:hover {
+button.btnAll:hover {
     background-color: #052051;
     color: #f3f5fc;
+}
+
+.btnTheme {
+    height: 30px;
+    width: 30px;
+    border-radius: 4px;
+    border: none;
+}
+
+.btnYellow {
+    background-color: yellow;
 }
