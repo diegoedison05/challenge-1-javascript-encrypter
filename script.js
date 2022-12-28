@@ -6,11 +6,13 @@
 
 const textAreaIn = document.querySelector('#textIn');
 const btnEncrypt = document.querySelector('#encry');
+const pResult = document.querySelector('.pResult');
 
 btnEncrypt.addEventListener('click', btnOnClick);
 // console.log(textIn);
 
 function btnOnClick() {
+    //
     const textIn = textAreaIn.value;
     let textLower = textIn.toLowerCase();
     // textLower = textLower.split('');
@@ -31,7 +33,5 @@ function btnOnClick() {
         }
     }
     console.log('textencrypt ' + textencrypt);
-    // console.log('textLower ' + textLower);
-    // console.log('textIn ' + textIn);
-    // console.log(textAreaIn.value);
+    pResult.innerText = textencrypt;
 }
