@@ -23,25 +23,30 @@ function btnOnClick() {
     // let textOut = document.getElementById('textOut');
     // textLower = textLower.split('');
     let textencrypt = '';
-    for (let i = 0; i < textLower.length; i++) {
-        if (textLower[i] == 'a' || textLower[i] == 'á') {
-            textencrypt = textencrypt + 'ai';
-        } else if (textLower[i] == 'e' || textLower[i] == 'é') {
-            textencrypt = textencrypt + 'enter';
-        } else if (textLower[i] == 'i' || textLower[i] == 'í') {
-            textencrypt = textencrypt + 'imes';
-        } else if (textLower[i] == 'o' || textLower[i] == 'ó') {
-            textencrypt = textencrypt + 'ober';
-        } else if (textLower[i] == 'u' || textLower[i] == 'ú') {
-            textencrypt = textencrypt + 'ufat';
-        } else {
-            textencrypt = textencrypt + textLower[i];
+
+    if (textLower == '') {
+        alert('Por favor ingrese el texto a encriptar');
+    } else {
+        for (let i = 0; i < textLower.length; i++) {
+            if (textLower[i] == 'a' || textLower[i] == 'á') {
+                textencrypt = textencrypt + 'ai';
+            } else if (textLower[i] == 'e' || textLower[i] == 'é') {
+                textencrypt = textencrypt + 'enter';
+            } else if (textLower[i] == 'i' || textLower[i] == 'í') {
+                textencrypt = textencrypt + 'imes';
+            } else if (textLower[i] == 'o' || textLower[i] == 'ó') {
+                textencrypt = textencrypt + 'ober';
+            } else if (textLower[i] == 'u' || textLower[i] == 'ú') {
+                textencrypt = textencrypt + 'ufat';
+            } else {
+                textencrypt = textencrypt + textLower[i];
+            }
         }
+        searchLogo.style.display = 'none';
+        pResult.style.display = 'none';
+        textOut.removeAttribute('hidden');
+        textOut.innerText = textencrypt;
     }
-    searchLogo.style.display = 'none';
-    pResult.style.display = 'none';
-    textOut.removeAttribute('hidden');
-    textOut.innerText = textencrypt;
 }
 
 // btnYellow.addEventListener('click', colorYellow);
@@ -90,6 +95,7 @@ btnDecrypt.addEventListener('click', decryptFunc);
 btnCopy.addEventListener('click', copyText);
 
 function copyText() {
+    //Se copia el texto que este en el resultado
     var content = document.getElementById('textOut');
     content.select();
     document.execCommand('copy');
