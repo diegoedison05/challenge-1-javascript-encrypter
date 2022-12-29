@@ -7,6 +7,10 @@ body {
     color: #052051;
 }
 
+h1 {
+    font-size: 20px;
+}
+
 textarea,
 button,
 p {
@@ -31,7 +35,7 @@ main {
 }
 
 .divLogo {
-    height: 480px;
+    height: 430px;
     width: 15%;
 }
 
@@ -42,7 +46,7 @@ main {
 
 .textAreaIn {
     padding: 10px;
-    height: 480px;
+    height: 430px;
     width: 96%;
     resize: none;
     border-radius: 10px;
@@ -53,7 +57,7 @@ main {
 
 .texA {
     padding: 10px;
-    height: 480px;
+    height: 430px;
     resize: none;
     border-radius: 10px;
     border: none;
@@ -61,7 +65,7 @@ main {
 }
 
 .divTextOut {
-    height: 480px;
+    height: 430px;
     /* width: 25%; */
     padding: 10px;
     border-radius: 10px;
@@ -109,4 +113,21 @@ button.btnAll:hover {
 
 .btnYellow {
     background-color: yellow;
+}
+
+footer,
+header {
+    height: 20px;
+    padding: 7px 0;
+    background-color: #052051;
+    color: #f3f5fc;
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    .divLogo,
+    .divTextIn,
+    .divTextOut {
+        width: auto;
+    }
 }
