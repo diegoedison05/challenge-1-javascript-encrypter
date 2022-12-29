@@ -51,6 +51,14 @@ main {
     /* font-family: 'Chakra Petch', sans-serif; */
 }
 
+.texA {
+    padding: 10px;
+    resize: none;
+    border-radius: 10px;
+    border: none;
+    background-color: #f3f5fc;
+}
+
 .divTextOut {
     height: 480px;
     width: 25%;
