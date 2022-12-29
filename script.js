@@ -11,6 +11,7 @@ const textOut = document.querySelector('#textOut');
 const btnCopy = document.querySelector('#copyT');
 let btnYellow = document.querySelector('body');
 const searchLogo = document.querySelector('.searchLogo');
+const pResult = document.querySelector('.pResult');
 
 btnEncrypt.addEventListener('click', btnOnClick);
 // console.log(textIn);
@@ -19,6 +20,7 @@ function btnOnClick() {
     //Encriptar
     const textIn = textAreaIn.value;
     let textLower = textIn.toLowerCase();
+    // let textOut = document.getElementById('textOut');
     // textLower = textLower.split('');
     let textencrypt = '';
     for (let i = 0; i < textLower.length; i++) {
@@ -36,8 +38,9 @@ function btnOnClick() {
             textencrypt = textencrypt + textLower[i];
         }
     }
-    // console.log('textencrypt ' + textencrypt);
     searchLogo.style.display = 'none';
+    pResult.style.display = 'none';
+    textOut.removeAttribute('hidden');
     textOut.innerText = textencrypt;
 }
 

@@ -53,6 +53,7 @@ main {
 
 .texA {
     padding: 10px;
+    height: 480px;
     resize: none;
     border-radius: 10px;
     border: none;
@@ -61,19 +62,27 @@ main {
 
 .divTextOut {
     height: 480px;
-    width: 25%;
+    /* width: 25%; */
     padding: 10px;
     border-radius: 10px;
     background-color: #f3f5fc;
 }
 
-.pResult {
-    /* text-align: center; */
+.divTextOut2 {
+    height: 100%;
+    width: 100%;
     margin-bottom: 10px;
 }
 
+.pResult {
+    /* height: 80%; */
+    /* width: auto%; */
+    margin: 10px;
+}
+
 .searchLogo {
-    width: 80%;
+    height: 40%;
+    /* width: 80%; */
 }
 
 .btnAll {
