@@ -13,6 +13,8 @@ body {
     /* font-family: 'Chakra Petch', sans-serif; */
     font-family: 'IBM Plex Mono', monospace;
     color: #052051;
+    /* position: relative;
+    padding-bottom: 3em; */
 }
 
 h1 {
