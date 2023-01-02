@@ -44,6 +44,7 @@ main {
     overflow: hidden;
     /* padding: 10px; */
     margin: 10px;
+    margin-top: 50px;
     width: 99%;
 }
 
@@ -151,6 +152,7 @@ footer {
     left: 0; */
 }
 
+/* Dimensiones para movil */
 @media screen and (max-width: 480px) {
     body,
     header,
@@ -163,7 +165,7 @@ footer {
     div {
         display: block;
         width: 90%;
-        margin: 0;
+        margin: auto;
     }
 
     .divLogo {
@@ -182,8 +184,59 @@ footer {
         margin: 10px 0;
     }
 
-    .divImg {
+    .divImg,
+    .texA {
         /* display: block; */
         width: 100%;
+    }
+
+    .textAreaIn {
+        height: 65%;
+    }
+}
+
+/* Dimensiones para tablet */
+@media screen and (min-device-width: 482px) and (max-device-width: 827px) {
+    body,
+    header,
+    p {
+        font-size: 18px;
+    }
+
+    main,
+    section,
+    div {
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+
+    .divLogo {
+        /* display: block; */
+        padding-top: 15px;
+        height: 50px;
+        width: 100%;
+    }
+
+    .divTextIn,
+    .textAreaIn,
+    .divTextOut,
+    .divTextOut2 {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .texA {
+        /* display: block; */
+        width: 100%;
+    }
+
+    .divImg {
+        visibility: hidden;
+        height: 30%;
+    }
+
+    .textAreaIn {
+        height: 65%;
     }
 }
