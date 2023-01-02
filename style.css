@@ -128,6 +128,10 @@ button.btnAll:hover {
     color: #f3f5fc;
 }
 
+.theme {
+    margin: 10px 0 5px 0;
+}
+
 .btnTheme {
     height: 30px;
     width: 30px;
@@ -135,8 +139,20 @@ button.btnAll:hover {
     border: none;
 }
 
-.btnYellow {
-    background-color: yellow;
+.btnBlue {
+    background-color: #e9ecf8;
+}
+
+.btnGray {
+    background-color: #ced4da;
+}
+
+.btnDarkB {
+    background-color: #609ed4;
+}
+
+.btnDarkF {
+    background-color: #052051;
 }
 
 footer {
@@ -170,8 +186,8 @@ footer {
 
     .divLogo {
         /* display: block; */
-        padding-top: 15px;
-        height: 50px;
+        padding-top: 8px;
+        height: 100px;
         width: 100%;
     }
 
@@ -213,8 +229,8 @@ footer {
 
     .divLogo {
         /* display: block; */
-        padding-top: 15px;
-        height: 50px;
+        padding-top: 8px;
+        height: 100px;
         width: 100%;
     }
 
